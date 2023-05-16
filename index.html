@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+
+        <style>
+            .box {
+                border: 2px solid red;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: 200px 400px;
+                grid-template-rows: 100px 100px 100px 100px;
+            }
+
+            .header {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .sidebar {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+
+            .main {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .extra {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            .footer {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="header box">
+            Header
+        </div>
+        <div class="sidebar box">
+            Sidebar
+        </div>
+        <div class="main box">
+            Main Content
+        </div>
+
+        <div class="extra box">
+            Extra Content
+        </div>
+        <div class="footer box">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
